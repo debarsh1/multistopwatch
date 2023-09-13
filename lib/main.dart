@@ -28,7 +28,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Stopwatch App'),
+        title: Text('Multi Stopwatch App'),
+        centerTitle: true,
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.info),

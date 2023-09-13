@@ -45,7 +45,12 @@ class _StopwatchCardState extends State<StopwatchCard> {
       child: Column(
         children: <Widget>[
           ListTile(
-            title: Text(widget.name),
+            title: Text(
+              widget.name,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             trailing: Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
@@ -64,6 +69,7 @@ class _StopwatchCardState extends State<StopwatchCard> {
               ],
             ),
           ),
+
           Padding(
             padding: EdgeInsets.all(16),
             child: Text(
